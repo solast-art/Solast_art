@@ -16,7 +16,26 @@
     "Birthday Video",
     "Calligraphy"
   ],
-  "gallery": [],
+  "gallery": [
+    "https://raw.githubusercontent.com/solast-art/Solast_art/main/assets/gallery/1765210096535_insta4_(13).jpg",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png",
+    "/assets/placeholder.png"
+  ],
   "videos": [],
   "social": {
     "instagram": "https://instagram.com/__solast_art",
@@ -28,6 +47,6 @@
   },
   "footer": {
     "developer": "@m_safeerr",
-    "copyright": "© 2025 Solast_art"
+    "copyright": "Â© 2025 Solast_art"
   }
 }
