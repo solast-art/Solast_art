@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solast — Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="wrap">
+    <aside class="sidebar">
+      <h2>Solast CMS</h2>
+      <div class="auth">
+        <div id="who">Not logged in</div>
+        <div id="tokenStatus" class="muted small">No token</div>
+        <button id="enterToken" class="btn">Set GitHub Token</button>
+        <button id="clearToken" class="btn light">Clear Token</button>
+      </div>
+
+      <nav class="nav">
+        <button data-sec="dashboard" class="active">Dashboard</button>
+        <button data-sec="gallery">Gallery (18)</button>
+        <button data-sec="videos">Videos</button>
+        <button data-sec="texts">Texts & Services</button>
+        <button data-sec="about">About Style</button>
+        <button data-sec="social">Social & SEO</button>
+        <button data-sec="settings">Settings</button>
+      </nav>
+      <p class="muted small">Repo: <strong>solast-art/Solast_art</strong></p>
+    </aside>
+
+    <main class="main">
+      <!-- Dashboard -->
+      <section id="dashboard" class="panel">
+        <h3>Dashboard</h3>
+        <p>content.json path: <code>/content.json</code></p>
+        <div class="stats">
+          <div>Gallery slots: <span id="sg">18</span></div>
+          <div>Videos: <span id="sv">0</span></div>
+        </div>
+        <div class="row">
+          <button id="reloadAll" class="btn">Reload content.json</button>
+          <button id="downloadJson" class="btn light">Download JSON</button>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="panel hidden">
+        <h3>Workspace (Gallery) — 18 slots</h3>
+        <p>Replace any slot (creates /assets/gallery/) and drag to reorder. Slots cannot be empty.</p>
+        <div id="galleryGrid" class="gallery-grid"></div>
+        <div class="row">
+          <button id="saveGallery" class="btn">Save Gallery Order</button>
+          <button id="refreshGallery" class="btn light">Refresh</button>
+        </div>
+      </section>
+
+      <!-- Videos -->
+      <section id="videos" class="panel hidden">
+        <h3>Video Showcase</h3>
+        <div class="row">
+          <input id="videoFile" type="file" accept="video/*">
+          <button id="uploadVideo" class="btn">Upload video</button>
+        </div>
+        <div id="videoList"></div>
+        <div class="row">
+          <button id="saveVideos" class="btn">Save Videos</button>
+          <button id="refreshVideos" class="btn light">Refresh</button>
+        </div>
+      </section>
+
+      <!-- Texts -->
+      <section id="texts" class="panel hidden">
+        <h3>Texts & Services</h3>
+        <label>Brand name<input id="brandName" type="text"></label>
+        <label>Slogan<input id="slogan" type="text"></label>
+        <label>Services (one per line)<textarea id="services" rows="6"></textarea></label>
+        <div class="row"><button id="saveTexts" class="btn">Save</button></div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="panel hidden">
+        <h3>About Text & Style</h3>
+        <label>About text<textarea id="aboutText" rows="5"></textarea></label>
+        <label>Font family
+          <select id="aboutFont">
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="'Georgia', serif">Georgia</option>
+            <option value="'Parisienne', cursive">Parisienne</option>
+            <option value="'Times New Roman', Times, serif">Times New Roman</option>
+          </select>
+        </label>
+        <label>Font size (px)<input id="aboutSize" type="number" min="12" max="48" value="16"></label>
+        <label>Font color<input id="aboutColor" type="color" value="#123840"></label>
+        <label><input id="aboutBold" type="checkbox"> Bold</label>
+        <label><input id="aboutItalic" type="checkbox"> Italic</label>
+        <div class="row"><button id="saveAbout" class="btn">Save</button></div>
+      </section>
+
+      <!-- Social & SEO -->
+      <section id="social" class="panel hidden">
+        <h3>Social & SEO</h3>
+        <label>Instagram<input id="insta" type="text"></label>
+        <label>WhatsApp<input id="wa" type="text"></label>
+        <label>SEO Title<input id="seoTitle" type="text"></label>
+        <label>SEO Description<textarea id="seoDesc" rows="3"></textarea></label>
+        <div class="row"><button id="saveSocial" class="btn">Save</button></div>
+      </section>
+
+      <!-- Settings -->
+      <section id="settings" class="panel hidden">
+        <h3>Settings</h3>
+        <p>Repo owner: <strong>solast-art</strong></p>
+        <p>Repo: <strong>Solast_art</strong></p>
+        <p>Branch: <strong>main</strong></p>
+        <p class="muted">You will be asked to paste a GitHub Personal Access Token (PAT) with <code>public_repo</code> or <code>repo</code> scope when uploading. PAT is stored locally in browser only.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
