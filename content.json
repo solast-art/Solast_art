@@ -1,0 +1,33 @@
+{
+  "heroTitle": "Crafting Memories with Elegance",
+  "brandName": "Solast_art",
+  "slogan": "Crafting Memories with Elegance",
+  "aboutText": "Solast Art is a creative studio based in Thaliparamba, Kannur.",
+  "aboutStyle": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "fontSize": 16,
+    "color": "#123840",
+    "bold": false,
+    "italic": false
+  },
+  "services": [
+    "Customised Frame",
+    "Invitation card",
+    "Birthday Video",
+    "Calligraphy"
+  ],
+  "gallery": [],
+  "videos": [],
+  "social": {
+    "instagram": "https://instagram.com/__solast_art",
+    "whatsapp": "https://wa.me/9778739301"
+  },
+  "seo": {
+    "title": "Solast Art | Custom Frames, Gift Hampers & Handmade Creations",
+    "description": ""
+  },
+  "footer": {
+    "developer": "@m_safeerr",
+    "copyright": "© 2025 Solast_art"
+  }
+}
