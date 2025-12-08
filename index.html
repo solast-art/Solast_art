@@ -1,233 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solast Art | Custom Frames, Gift Hampers & Handmade Creations</title>
-    <meta name="description" content="Solast Art creates customised frames, gift hampers, invitation cards, calligraphy, albums, bouquets & personalised handmade gifts in Kannur, Thaliparamba.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO TITLE -->
+    <title>Solast Art | Custom Frames, Gift Hampers & Handmade Creations</title>
+
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="Solast Art creates customised frames, gift hampers, invitation cards, calligraphy, albums, bouquets & personalised handmade gifts in Kannur, Thaliparamba. Crafted with elegance and creativity.">
+
+    <!-- WEBSITE DP / FAVICON -->
     <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- SOCIAL PREVIEW (OPEN GRAPH) -->
+    <meta property="og:title" content="Solast Art - Handmade Custom Frames & Gifts">
+    <meta property="og:description" content="Custom frames, hampers, invitation cards & unique handmade gifts crafted with elegance in Kannur.">
     <meta property="og:image" content="https://solast-art.github.io/Solast_art/assets/logo.png">
     <meta property="og:url" content="https://solast-art.github.io/Solast_art/">
     <meta property="og:type" content="website">
 
-    <!-- styles -->
+    <!-- ANTI-DARK-MODE OVERRIDE -->
+    <meta name="color-scheme" content="light">
+    <style>
+        html { color-scheme: light !important; }
+        * { forced-color-adjust: none !important; }
+    </style>
+
+    <!-- UPDATED GOOGLE SCHEMA (LOGO + LOCATION + CONTACT) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Solast Art",
+      "image": "https://solast-art.github.io/Solast_art/assets/logo.png",
+      "url": "https://solast-art.github.io/Solast_art/",
+      "telephone": "+91-9778739301",
+
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Thaliparamba",
+        "addressLocality": "Kannur",
+        "addressRegion": "Kerala",
+        "addressCountry": "IN"
+      },
+
+      "priceRange": "₹₹",
+      "servesLocation": ["Kannur", "Thaliparamba", "Kerala"],
+
+      "sameAs": [
+        "https://instagram.com/__solast_art",
+        "https://wa.me/9778739301"
+      ]
+    }
+    </script>
+
+    <!-- STYLES & FONTS -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/55201909b8.js" crossorigin="anonymous"></script>
-
-    <!-- Firebase (compat) -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </head>
+
 <body>
-    <nav>
-        <img id="siteLogo" src="assets/logo.png" alt="">
-    </nav>
 
-    <main>
-      <div class="hero-container">
-          <img id="heroLogo" src="assets/logo.png" class="hero-logo">
-          <img id="heroImg" src="assets/heroimg.png" alt="" class="heroimg">
+        <nav>
+            
+            <img src="assets/logo.png" alt="">
+            
+       </nav>
+      <main>
+        <div  class="hero-container">
+            <img src="assets/logo.png" class="hero-logo">
+            <img src="assets/heroimg.png" alt="" class="heroimg">
 
-          <div class="hero-text">
-              <p class="slogan" id="heroSlogan">"Crafting Memories with Elegance"</p>
-              <p class="brandname" id="brandName">Solast_art</p>
-          </div>
-      </div>
+                <div class="hero-text">
+        <p class="slogan">"Crafting Memories with Elegance"</p>
+        <p class="brandname">Solast_art</p>
+    </div>
 
-      <div class="works">
-        <h3 class="works-title ">
-          <span class="w1">Some</span>
-          <span class="w2">of</span>
-          <span class="w3">our</span>
-          <span class="w4">works</span>
-        </h3>
-
-        <div class="works-gallery " id="worksGallery">
-          <!-- dynamic gallery rows inserted here -->
         </div>
-      </div>
+        <div class="works">
+             <h3 class="works-title ">
+      <span class="w1">Some</span>
+      <span class="w2">of</span>
+      <span class="w3">our</span>
+      <span class="w4">works</span>
+    </h3>
 
-      <div class="service">
-        <section class="services-section">
-          <h2 class="services-title">What We Offer</h2>
-          <div class="services-g" id="servicesGrid"></div>
-        </section>
-      </div>
+   
+    <div class="works-gallery ">
 
-      <div class="connect">
-        <section class="con-sec">
-          <p class="connect-text">For more details connect us</p>
-          <div class="con-icon">
-            <a id="linkInsta" href="https://ig.me/m/__solast_art" target="_blank" class="icon-btn">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a id="linkWa" href="https://wa.me/9778739301" target="_blank" class="icon-btn">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </section>
-      </div>
+    
+        <div class="work-row row hidden ">
+            
+            <div  class="work-box"><img src="assets/insta1.jpg"></div>
+            <div  class="work-box"><img src="assets/insta2.jpg"></div>
+            <div  class="work-box"><img src="assets/insta3.jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (1).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (2).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (3).jpg"></div>
+        </div>
 
-      <div class="video" >
-        <section class="video-carousel-section">
-          <h2 class="carousel-title">Our Video Showcase</h2>
-          <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-              <!-- videos added dynamically -->
+        <!-- ROW 2 -->
+        <div class="work-row row hidden">
+            <div  class="work-box"><img src="assets/insta4 (4).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (5).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (6).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (7).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (8).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (9).jpg"></div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="work-row row hidden ">
+            <div  class="work-box"><img src="assets/insta4 (10).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (11).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (12).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (13).jpg"></div>
+            <div  class="work-box"><img src="assets/insta4 (14).jpg"></div>
+            <div  class="work-box"><img src="assets/insta5.jpg"></div>
+        </div>
+
+    </div>
+
+
+        </div>
+        <div class="service">
+            <section class="services-section">
+
+    <h2 class="services-title">What We Offer</h2>
+
+    <div class="services-g">
+
+        <div class="service-box"><p>Customised Frame</p></div>
+        <div class="service-box"><p>Invitation card</p></div>
+        <div class="service-box"><p>Birthday Video</p></div>
+        <div class="service-box"><p>Calligraphy</p></div>
+        <div class="service-box"><p>Baby Hamper</p></div>
+        <div class="service-box"><p>Gift Hamper</p></div>
+        <div class="service-box"><p>Albums</p></div>
+        <div class="service-box"><p>Bouquet</p></div>
+
+    </div>
+
+</section>
+        </div>
+        <div class="connect">
+    <section class="con-sec">
+
+       <p class="connect-text">For more details connect us</p>
+
+    <div class="con-icon">
+    
+        <a href="https://ig.me/m/__solast_art" target="_blank" class="icon-btn">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        
+        <a href="https://wa.me/9778739301" target="_blank" class="icon-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+</section>
+        </div>
+        <div class="video" >
+            </section>
+
+<section class="video-carousel-section">
+
+    <h2 class="carousel-title">Our Video Showcase</h2>
+
+    <div class="carousel-container">
+
+        <div class="carousel-track">
+
+            <!-- Video 1 -->
+            <div class="carousel-item active">
+                <video src="assets/instavid (4).mp4" muted autoplay loop></video>
             </div>
-          </div>
-          <div class="carousel-buttons">
-            <button id="prevBtn">‹</button>
-            <button id="nextBtn">›</button>
+
+            <!-- Video 2 -->
+            <div class="carousel-item">
+                <video src="assets/instavid (3).mp4" muted loop></video>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="carousel-item">
+                <video src="assets/instavid (1).mp4" muted loop></video>
+            </div>
+
+             <div class="carousel-item">
+                <video src="assets/instavid (2).mp4" muted loop></video>
+            </div>
+
+           
+        </div>
+
+
+    </div>
+
+    <div class="carousel-buttons">
+        <button id="prevBtn">‹</button>
+        <button id="nextBtn">›</button>
             <button id="muteToggleBtn"><i class="fa-solid fa-volume-xmark"></i></button>
-          </div>
 
-          <section class="about-section" style="text-align:center; padding: 2rem; max-width: 900px; margin: auto;">
-            <h2 id="aboutTitle" style="font-family: 'Parisienne', cursive; color:#0A5356; font-size:2.4rem; margin-bottom:1rem;">
-                About Solast Art
-            </h2>
-            <p id="aboutText" style="font-size:1rem; color:#123840; line-height:1.6;">
-                Solast Art is a creative studio based in Thaliparamba, Kannur.
-            </p>
-          </section>
+    </div>
 
-        </section>
-      </div>
-    </main>
+    <section class="about-section" style="text-align:center; padding: 2rem; max-width: 900px; margin: auto;">
+    <h2 style="font-family: 'Parisienne', cursive; color:#0A5356; font-size:2.4rem; margin-bottom:1rem;">
+        About Solast Art
+    </h2>
 
-    <footer>
-      <div class="footer-box follow">
-          <h3>Follow Us</h3>
-          <a id="footerInsta" href="https://instagram.com/__solast_art" target="_blank" class="footer-icon">
-              <i class="fa-brands fa-instagram"></i>
-          </a>
-      </div>
+    <p style="font-size:1rem; color:#123840; line-height:1.6;">
+        Solast Art is a creative studio based in Thaliparamba, Kannur.  
+        We specialise in customised frames, gift hampers, invitation cards,  
+        calligraphy, birthday videos, baby hampers, albums, bouquets, and  
+        personalised handmade gifts crafted with elegance and detail.  
+        Every creation is made with passion to make your moments memorable.
+    </p>
+</section>
 
-      <div class="footer-box connect">
-          <h3>Connect Us</h3>
-          <div class="footer-socials">
-              <a id="footerWa" href="https://wa.me/9778739301" target="_blank" class="footer-icon">
-                  <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://ig.me/m/__solast_art" target="_blank" class="footer-icon">
-                  <i class="fa-brands fa-instagram"></i>
-              </a>
-          </div>
-      </div>
 
-      <div class="footer-box loc">
-          <h3>Location</h3>
-          <i class="fa-solid fa-location-dot"><h5>Thaliparamba,<br>Kannur</h5></i>
-      </div>
+</section>
+        </div>
+        </main>
+        <footer>
+          <!-- Follow Us -->
+        <div class="footer-box follow">
+            <h3>Follow Us</h3>
+            <a href="https://instagram.com/__solast_art" target="_blank" class="footer-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
 
-      <div class="footer-bottom">
-          <p class="copyright" id="footerCopyright">© 2025 Solast_art. All Rights Reserved.</p>
-          <p class="developer">Developed by <a id="devLink" href="https://instagram.com/m_safeerr" target="_blank">@m_safeerr</a></p>
-      </div>
-    </footer>
+        <!-- Connect Us -->
+        <div class="footer-box connect">
+            <h3>Connect Us</h3>
+            <div class="footer-socials">
+                <a href="https://wa.me/9778739301" target="_blank" class="footer-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://ig.me/m/__solast_art" target="_blank" class="footer-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Location -->
+        <div class="footer-box loc">
+            <h3>Location</h3>
+               <i class="fa-solid fa-location-dot"><h5>Thaliparamba,<br>Kannur</h5></i>
+                
+            </a>
+        </div>
 
-   <script>
-async function fetchContentJson(){
-  try {
-    const res = await fetch('/content.json', {cache: "no-store"});
-    if(!res.ok) { console.error('content.json not found or failed'); return null; }
-    return await res.json();
-  } catch(e){ console.error(e); return null; }
-}
+    </div>
+    
+    
 
-function applyContentToPage(data){
-  if(!data) return;
-  if(data.slogan) document.querySelector('.slogan').textContent = data.slogan;
-  if(data.brandName) document.querySelector('.brandname').textContent = data.brandName;
-  if(data.aboutText) {
-    const p = document.querySelector('.about-section p') || document.getElementById('aboutText');
-    if(p) p.textContent = data.aboutText;
-  }
-  // about style
-  if(data.aboutStyle){
-    const p = document.querySelector('.about-section p') || document.getElementById('aboutText');
-    if(p){
-      p.style.fontFamily = data.aboutStyle.fontFamily || p.style.fontFamily;
-      p.style.fontSize = (data.aboutStyle.fontSize || 16) + 'px';
-      p.style.color = data.aboutStyle.color || p.style.color;
-      p.style.fontWeight = data.aboutStyle.bold ? '700' : '400';
-      p.style.fontStyle = data.aboutStyle.italic ? 'italic' : 'normal';
-    }
-  }
-  // services
-  if(Array.isArray(data.services)){
-    const container = document.querySelector('.services-g');
-    if(container){
-      container.innerHTML = '';
-      data.services.forEach(s=>{
-        const box = document.createElement('div');
-        box.className = 'service-box';
-        box.innerHTML = `<p>${s}</p>`;
-        container.appendChild(box);
-      });
-    }
-  }
-  // gallery (build rows of 6)
-  if(Array.isArray(data.gallery)){
-    const gallery = document.querySelector('.works-gallery');
-    if(gallery){
-      gallery.innerHTML = '';
-      const per = 6;
-      for(let i=0;i<data.gallery.length;i+=per){
-        const row = document.createElement('div'); row.className = 'work-row row';
-        data.gallery.slice(i,i+per).forEach(url=>{
-          const box = document.createElement('div'); box.className = 'work-box';
-          const img = document.createElement('img'); img.src = url; img.alt = '';
-          box.appendChild(img); row.appendChild(box);
-        });
-        gallery.appendChild(row);
-      }
-    }
-  }
-  // videos
-  if(Array.isArray(data.videos)){
-    const track = document.querySelector('.carousel-track');
-    if(track){
-      track.innerHTML = '';
-      data.videos.forEach((v, i)=>{
-        const item = document.createElement('div'); item.className = 'carousel-item' + (i===0 ? ' active' : '');
-        item.innerHTML = `<video src="${v}" muted ${i===0 ? 'autoplay loop' : ''}></video>`;
-        track.appendChild(item);
-      });
-      // if your existing script handles carousel playback, it should find new videos.
-    }
-  }
-  // social links
-  if(data.social){
-    const ig = document.getElementById('linkInsta') || document.querySelector('.icon-btn[href*="instagram"]');
-    if(ig) ig.href = data.social.instagram;
-    const wa = document.getElementById('linkWa') || document.querySelector('.icon-btn[href*="wa.me"]');
-    if(wa) wa.href = data.social.whatsapp;
-  }
-  // seo
-  if(data.seo && data.seo.title) document.title = data.seo.title;
-  if(data.seo && data.seo.description){
-    let meta = document.querySelector('meta[name="description"]');
-    if(!meta){ meta = document.createElement('meta'); meta.name = 'description'; document.head.appendChild(meta); }
-    meta.content = data.seo.description;
-  }
-  // footer
-  if(data.footer && data.footer.developer){
-    const dev = document.querySelector('.developer a');
-    if(dev) dev.textContent = data.footer.developer;
-  }
-}
+    <!-- COPYRIGHT BAR -->
+    <div class="footer-bottom">
+        <p class="copyright">© 2025 Solast_art. All Rights Reserved.</p>
 
-document.addEventListener('DOMContentLoaded', async ()=>{
-  const data = await fetchContentJson();
-  applyContentToPage(data);
-});
-</script>
+        <p class="developer">
+            Developed by
+            <a href="https://instagram.com/m_safeerr" target="_blank">@m_safeerr</a>
+        </p>
+    </div>
+        </footer>
 
+        <script src="script.js"></script>
+   
 </body>
 </html>
