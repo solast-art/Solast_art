@@ -1,14 +1,8 @@
 {
   "heroTitle": "Crafting Memories with Elegance",
-<<<<<<< HEAD
   "brandName": "Solast_art",
   "slogan": "Crafting Memories with Elegance",
   "aboutText": "Solast Art is a creative studio based in Thaliparamba, Kannur. We specialise in customised frames, gift hampers, invitation cards, calligraphy, birthday videos, baby hampers, albums, bouquets, and personalised handmade gifts crafted with elegance and detail.",
-=======
-  "brandName": "",
-  "slogan": "Crafting Memories with Elegance",
-  "aboutText": "Solast Art is a creative studio based in Thaliparamba, Kannur.",
->>>>>>> d3697d60df025b9b6e67591b022bbb8211900da1
   "aboutStyle": {
     "fontFamily": "Arial, Helvetica, sans-serif",
     "fontSize": 16,
@@ -20,7 +14,6 @@
     "Customised Frame",
     "Invitation card",
     "Birthday Video",
-<<<<<<< HEAD
     "Calligraphy",
     "Baby Hamper",
     "Gift Hamper",
@@ -53,38 +46,12 @@
     "/assets/instavid (1).mp4",
     "/assets/instavid (2).mp4"
   ],
-=======
-    "Calligraphy"
-  ],
-  "gallery": [
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png",
-    "http://127.0.0.1:5500/assets/placeholder.png"
-  ],
-  "videos": [],
->>>>>>> d3697d60df025b9b6e67591b022bbb8211900da1
   "social": {
     "instagram": "https://instagram.com/__solast_art",
     "whatsapp": "https://wa.me/9778739301"
   },
   "seo": {
     "title": "Solast Art | Custom Frames, Gift Hampers & Handmade Creations",
-<<<<<<< HEAD
     "description": "Solast Art creates customised frames, gift hampers, invitation cards, calligraphy, albums, bouquets & personalised handmade gifts in Kannur, Thaliparamba."
   },
   "footer": {
@@ -92,12 +59,3 @@
     "copyright": "© 2025 Solast_art. All Rights Reserved."
   }
 }
-=======
-    "description": ""
-  },
-  "footer": {
-    "developer": "@m_safeerr",
-    "copyright": "© 2025 Solast_art"
-  }
-}
->>>>>>> d3697d60df025b9b6e67591b022bbb8211900da1
